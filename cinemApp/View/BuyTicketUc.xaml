@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="cinemApp.View.BuyTicketUc"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:cinemApp.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"  Height="800.997"
+ Width="882.456"
+             x:Name="buy"
+ HorizontalAlignment="Stretch"
+ VerticalAlignment="Top"
+ Background="White"  >
+    <UserControl.Resources >
+        <SolidColorBrush Color="DarkViolet" x:Key ="darkblue"/>
+        <SolidColorBrush Color="Violet" x:Key ="blue"/>
+        <SolidColorBrush Color="Violet"  x:Key ="violet"/>
+    </UserControl.Resources>
+        <Grid Background="DarkBlue" >
+        <Button Height=" 50" BorderBrush="{StaticResource blue }" Visibility="Hidden" Name="buyy" Foreground="White" Command="{Binding buy}" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 100">Buy</Button>
+        <StackPanel Orientation="Horizontal" >
+            
+        <StackPanel HorizontalAlignment="Left"   >
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Foreground="White" Command="{Binding ButtonClick}" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">1</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Foreground="White" Command="{Binding ButtonClick}" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">6</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Foreground="White" Command="{Binding ButtonClick}" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">11</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Foreground="White" Command="{Binding ButtonClick}" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">16</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Foreground="White" Command="{Binding ButtonClick}" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">21</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Foreground="White" Command="{Binding ButtonClick}" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">26</Button>
+
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Foreground="White" Command="{Binding ButtonClick}" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">31</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Foreground="White" Command="{Binding ButtonClick}" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">36</Button>
+           
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left"     >
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Foreground="White" FontSize=" 25" Command="{Binding ButtonClick}" Background="{StaticResource darkblue }"  Width=" 50">2</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">7</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">12</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">17</Button>
+
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">22</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">27</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">32</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">37</Button>
+
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left"     >
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">3</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">8</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">13</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">18</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">23</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">28</Button>
+
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">33</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">38</Button>
+
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left"     >
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">4</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">9</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">14</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">19</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">24</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">29</Button>
+
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">34</Button>
+
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">39</Button>
+
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left"     >
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">5</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">10</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">15</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">20</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">25</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">30</Button>
+
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">35</Button>
+                <Button Height=" 50" BorderBrush="{StaticResource blue }" Command="{Binding ButtonClick}" Foreground="White" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 50">40</Button>
+               
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

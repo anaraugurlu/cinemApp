@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="cinemApp.View.UserPartUc"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:cinemApp.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Height="800.997" Width="882.456" HorizontalAlignment="Stretch" VerticalAlignment="Top"  >
+    <UserControl.Resources >
+        <Style x:Key="Corner"  TargetType="{x:Type Button}">
+            <Setter Property="Template" >
+                <Setter.Value >
+                    <ControlTemplate  TargetType="{x:Type Button}">
+                        <Grid  Margin="0,0,-33,-12"   >
+                            <Ellipse Fill="DarkBlue"    />
+                            <ContentControl Content="{TemplateBinding Content }" Foreground="White"  FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid Background="DarkBlue"          >
+        <local:ShowMovieUc x:Name="show" Visibility="Collapsed" ></local:ShowMovieUc>
+        <local:BuyTicketUc x:Name="buy" Visibility="Hidden" ></local:BuyTicketUc> 
+        <Label Foreground="White" Name="label" FontSize=" 42" FontFamily="Italic">Cinema</Label>
+        <Image x:Name="image" Source="/Image/user.jpg" Margin="-10,36,10.4,-36.2"  ></Image>
+        <Button Height="30" Width=" 30" Name="closeshow" Visibility="Hidden"    Command      ="{Binding CloseShowButtonClick}" Margin=" 790,0,0,700" Background="AliceBlue"  >X</Button>
+        <Button Height="30" Width=" 30" Name="closebuy" Visibility="Hidden"    Command      ="{Binding CloseBuyButtonClick}" Margin=" 790,0,0,700" Background ="AliceBlue"  >X</Button>
+        <StackPanel Orientation="Horizontal" Margin="246,350,0.4,9.8" >
+            <Button Height="60" Width=" 100" Name="s" Command ="{Binding ShowMoviesButtonClick}" Style="{StaticResource Corner }" Margin=" 50" >Show Movies</Button>
+            <Button Height="60" Width =" 100" Name="b" Command="{Binding BuyTicketButtonClick}" Style="{StaticResource Corner}" Margin=" 50" Content="Buy Ticket" />
+
+        </StackPanel>
+    </Grid>
+</UserControl>

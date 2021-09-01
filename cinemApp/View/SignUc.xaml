@@ -1,0 +1,92 @@
+﻿<UserControl x:Class="cinemApp.View.SignUc"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:cinemApp.View"
+             mc:Ignorable="d" Height="800.997" Width="882.456" >
+    <Grid Background="Black" >
+        <local:UserPartUc x:Name="user" Visibility="Collapsed"  ></local:UserPartUc>
+        <StackPanel>
+
+            <Expander
+            Header="Sign in"
+            Padding="15"
+            Margin="10"        
+            Name="in"
+                Height="240"
+                FontSize=" 20"
+           Foreground="White" 
+            BorderThickness="5"
+            >
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" >
+                        <Label Foreground ="White" >Username</Label>
+                        <TextBox HorizontalAlignment="Left"   Foreground="White" BorderBrush="White"  Background="Transparent"  FontSize=" 20"  Name="name" Width=" 290" Height=" 40"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" >
+                        <Label Foreground ="White" Margin=" 3">Password</Label>
+
+                        <TextBox HorizontalAlignment="Left" Foreground="White"   BorderBrush="White"  Background="Transparent"  FontSize=" 20"  Name="passw" Width=" 290" Height=" 40"></TextBox>
+                    </StackPanel>
+                    <Button  Background="Transparent" Width="100" Name="signin" BorderBrush="Black" Margin=" 300,0,0,0"  Command="{Binding SignInButtonClick}" Height="60">
+                        <Button.Content >
+
+                            <StackPanel Orientation="Horizontal" Height=" 40">
+                                <Image Source="/Image/butt2.png"  Height=" 40" Width="100"  />
+
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+                </StackPanel>
+
+            </Expander>
+
+            <Expander
+            Name="up"
+                
+                Foreground="White" 
+                FontSize=" 20"
+            Header="Sign Up"
+            Padding="15"
+            Margin="10,10,-0.4,10"        
+            Height="311"
+            BorderThickness="5" 
+            
+            >
+                <StackPanel >
+
+                    <StackPanel Orientation="Horizontal" >
+                        <Label Foreground ="White" >Username</Label>
+                        <TextBox HorizontalAlignment="Left" Foreground="White"   BorderBrush="White"   Background="Transparent"  FontSize=" 20"  Name="name2" Width=" 290" Height=" 40"    ></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" >
+                        <Label Foreground ="White" >Password</Label>
+                        <TextBox Name="passw2" HorizontalAlignment="Left" Margin=" 5,0,0,0" Foreground="White" BorderBrush="White"  Background="Transparent"  Width=" 290" Height=" 40"     FontSize=" 20"  ></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" >
+                        <Label Foreground ="White" >Email</Label>
+                        <TextBox Name="email" HorizontalAlignment="Left" Margin="40,0,0,0"  Foreground="White" BorderBrush="White"  Background="Transparent"  Width="290" Height=" 40"      FontSize=" 20"  ></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" >
+                        <Label Foreground ="White" >Age</Label>
+                        <TextBox Name="age" HorizontalAlignment="Left"  Margin=" 52,0,0,0"  Foreground="White" BorderBrush="White"  Background="Transparent"  Width=" 290" Height=" 40"      FontSize=" 20"  ></TextBox>
+
+                    </StackPanel>
+                    <Button  Background="Transparent"  Width="100" Name="signup" BorderBrush="Black" Margin=" 300,0,0,0"  Command="{Binding SignUpButtonClick}" Height="60">
+                        <Button.Content >
+
+                            <StackPanel Orientation="Horizontal" Height=" 50">
+                                <Image Source="/Image/button4.png"  Height=" 50" Width="100"  />
+
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+
+
+                </StackPanel>
+            </Expander>
+
+        </StackPanel>
+    </Grid>
+</UserControl>

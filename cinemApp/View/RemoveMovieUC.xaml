@@ -1,0 +1,121 @@
+﻿<UserControl x:Class="cinemApp.View.RemoveMovieUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:cinemApp.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"  Height="800.997"
+ Width="882.456"
+             x:Name="remove"
+ HorizontalAlignment="Stretch"
+ VerticalAlignment="Top"
+ Background="White"  >
+    <UserControl.Resources >
+        <Style x:Key="Corner"  TargetType="{x:Type Button}">
+            <Setter Property="Template" >
+                <Setter.Value >
+                    <ControlTemplate  TargetType="{x:Type Button}">
+                        <Grid     Margin="0,0,-33,-12"   >
+                            <Ellipse Fill="DarkBlue"    />
+                            <ContentControl Content="{TemplateBinding Content }" Foreground="White"  FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+
+        <Grid.RowDefinitions >
+            <RowDefinition 
+    Height=" *"/>
+            <RowDefinition 
+    Height=" 10*"/>
+        </Grid.RowDefinitions>
+        <Grid 
+    Grid.Row=" 1" 
+    Margin="0,0.2,0.4,-514.2">
+            <Image 
+    Source="/Image/b.png" 
+    Margin="0,-958,0,-47"      >
+            </Image>
+            <Image 
+    Source="/Image/b.png" Margin="0,10,0,-9"      ></Image>
+            <Button x:Name="rem" Command ="{Binding RemoveMovieButtonClick}" Style="{StaticResource Corner}" Visibility="Hidden"   Margin="241,291,480,888" Content="Remove Movie"  />
+            <StackPanel
+    Orientation="Horizontal" >
+
+
+
+                <StackPanel >
+                    <Image  
+    Height="300"
+    Width="200"
+   
+    Source="{Binding Movies[12].ImagePath}" ></Image>
+                    <Label 
+    FontWeight="ExtraBold" 
+    
+    FontSize="20" 
+    Width=" 200"
+    Foreground=" white" 
+  Content="{Binding Movies[12].Name}" >
+                    </Label>
+                    <Label
+    FontWeight="ExtraBold" 
+   
+    Foreground="White" 
+    FontSize="15"
+    Width=" 200" 
+    Content="{Binding Movies[12].Description}" >
+                    </Label>
+                </StackPanel>
+
+            </StackPanel>
+        </Grid>
+        <Grid
+         Grid.Row=" 0" 
+         Background="Transparent"    >
+            <Border  Grid.Row="1" 
+         BorderBrush="Aqua" 
+         BorderThickness=" 3"
+         Margin="7" 
+         CornerRadius="10" >
+                <StackPanel 
+         Orientation="Horizontal"  >
+                    <TextBox 
+         Name="messtxtb"
+         Foreground="White"    
+         Width="750"
+         BorderThickness="0"
+         Cursor="Hand"
+         FontSize="30"
+         Background="Transparent"  >
+                    </TextBox>
+                    <Button 
+           Width=" 100"
+            Height=" 30"
+            x:Name="sendbtn"
+            Cursor="Hand"
+            Command="{Binding SearchButtonClick}"
+            BorderBrush="White" 
+            FontSize="11" 
+            BorderThickness=" 1"
+            Background="Transparent"   >
+                        <StackPanel 
+                Orientation="Horizontal">
+                            <Label 
+                    Foreground="White"  
+                    FontSize=" 20"
+                    Height="35"
+                    Content="Search" />
+                            <Image
+                    Source="/Image/send.png"  />
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>
