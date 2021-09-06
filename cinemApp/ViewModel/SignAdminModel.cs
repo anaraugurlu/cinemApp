@@ -82,7 +82,7 @@ namespace cinemApp.ViewModel
               
                 foreach (var item in Admins)
                 {
-                    if (sign.name.Text == item.UserName && sign.passw.Text == item.Password)
+                    if (sign.name.Text == item.UserName && sign.passw.Text == item.Password||sign.name .Text ==sign.name2 .Text &&sign.passw .Text ==sign.passw2 .Text )
                     {
                        
 

@@ -115,10 +115,20 @@ namespace cinemApp.Repostory
                     UserName="admin2",
                     Password ="admin2",
 
-                },   new Admin
+                },  
+                new Admin
                 {
                     UserName="admin3",
                     Password ="admin3",
+
+                },
+                new Admin
+                {
+                    
+
+                },new Admin
+                {
+                   
 
                 },
             };
@@ -162,10 +172,16 @@ namespace cinemApp.Repostory
                     UserName="user5",
                     Password ="user5"
 
-                },  new User
+                }, 
+                new User
                 {
                     UserName="user6",
                     Password ="user6"
+
+                },
+                  new User
+                {
+                    
 
                 },
 

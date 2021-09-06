@@ -70,6 +70,11 @@ namespace cinemApp.ViewModel
                 user.Email = sign.email.Text;
                 UserRepository.GetAllUsers().Add(user);
                 Users.Add(user);
+              
+
+
+
+
                 MessageBox.Show("new user was added");
                
             }
@@ -81,31 +86,35 @@ namespace cinemApp.ViewModel
             {
                 foreach (var item in Users)
                 {
-
-
-                    if (sign.name.Text == item.UserName && sign.passw.Text == item.Password)
+                    if (sign.name.Text == item.UserName && sign.passw.Text == item.Password||sign.name .Text ==sign.name2 .Text &&sign.passw.Text ==sign.passw2 .Text )
                     {
-
-                       
-                        
                            sign.@in .Visibility  = Visibility.Collapsed;
                            sign.@up .Visibility  = Visibility.Collapsed;
                         sign.user .Visibility = Visibility.Visible;
                     
                         return;
-                        
-
-
                     }
                     else
                     {
                         MessageBox.Show("this user not aviable please try again");
                         return;
-                        
                     }
+                }
+                foreach (var item in UserRepository .GetAllUsers ())
+                {
+                    if (sign.name.Text == item.UserName && sign.passw.Text == item.Password)
+                    {
+                        sign.@in.Visibility = Visibility.Collapsed;
+                        sign.@up.Visibility = Visibility.Collapsed;
+                        sign.user.Visibility = Visibility.Visible;
 
-
-
+                        return;
+                    }
+                    else
+                    {
+                        MessageBox.Show("this user not aviable please try again");
+                        return;
+                    }
                 }
             });
 
