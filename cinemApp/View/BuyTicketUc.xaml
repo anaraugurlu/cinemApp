@@ -17,7 +17,7 @@
         <SolidColorBrush Color="Violet"  x:Key ="violet"/>
     </UserControl.Resources>
         <Grid Background="DarkBlue" >
-        <Button Height=" 50" BorderBrush="{StaticResource blue }" Visibility="Hidden" Name="buyy" Foreground="White" Command="{Binding buy}" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 100">Buy</Button>
+        <Button Height=" 50" BorderBrush="{StaticResource blue }" Visibility="Hidden"     Name="buyy" Foreground="White" Command="{Binding buy}" FontSize=" 25" Background="{StaticResource darkblue }"  Width=" 100">Buy</Button>
         <StackPanel Orientation="Horizontal" >
             
         <StackPanel HorizontalAlignment="Left"   >

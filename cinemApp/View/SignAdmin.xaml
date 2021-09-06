@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:cinemApp.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"  Height="800.997" Width="882.456"  >
-    <Grid Background="Black" >
+    <Grid Background="Transparent"  >
         <local:AdminPartUc Visibility="Collapsed" x:Name="admin"></local:AdminPartUc>
         <StackPanel>
 

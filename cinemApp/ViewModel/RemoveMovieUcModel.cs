@@ -31,8 +31,20 @@ namespace cinemApp.ViewModel
 
             RemoveMovieButtonClick = new RelayCommand((r) => {
 
-
                 foreach (var item in Movies)
+                {
+
+
+                    if (RemoveMovie.messtxtb.Text == item.Name)
+                    {
+                        Movies.Remove(item);
+                        MessageBox.Show($"movie {item.Name } was deleted");
+               
+                       
+                        return;
+                    }
+                }
+                foreach (var item in MoviesRepository .GetMovies ())
                 {
 
 
@@ -43,7 +55,7 @@ namespace cinemApp.ViewModel
                         return;
                     }
                 }
-                });
+            });
             MoviesRepository = new FakeRepostory();
             Movies = new ObservableCollection<Movie>(MoviesRepository.GetMovies());
 

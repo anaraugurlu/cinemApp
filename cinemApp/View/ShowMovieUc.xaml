@@ -17,7 +17,7 @@
             <StackPanel>
                         
                 <Image  Height="200" Width="150"  Source="{Binding Movies[0].ImagePath}" ></Image>
-                <Label FontWeight="ExtraBold" FontSize="20" Width=" 200" Content="{Binding Movies[0].Name}" ></Label>
+                <Label Name="n" FontWeight="ExtraBold" FontSize="20" Width=" 200" Content="{Binding Movies[0].Name}" ></Label>
                 <Label FontWeight="ExtraBold" Width=" 200" FontSize="15" Content="{Binding Movies[0].Description}" ></Label>
 
                 <Image Height="200" Width="150" Source="{Binding Movies[1].ImagePath}" ></Image>
@@ -40,7 +40,7 @@
 
                 <Label FontWeight="ExtraBold" FontSize="15" Width=" 200" Content="{Binding Movies[3].Description}" ></Label>
                 <Image  Height="200" Width="150"  Source="{Binding Movies[6].ImagePath}" ></Image>
-                <Label FontWeight="ExtraBold" FontSize="20" Width=" 200" Content="{Binding Movies[6].Name}" ></Label>
+                <Label FontWeight="ExtraBold" FontSize="20" Width=" 200" Content="{Binding Movies[6].Name}" Name="name"></Label>
 
                 <Label FontWeight="ExtraBold" FontSize="15" Width=" 200" Content="{Binding Movies[6].Description}" ></Label>
             </StackPanel>

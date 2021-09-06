@@ -40,6 +40,8 @@
     Source="/Image/b.png" 
     Margin="0,-958,0,-47"      >
             </Image>
+            <local:ShowMovieUc Visibility="Hidden"   x:Name="show"></local:ShowMovieUc>
+
             <Image 
     Source="/Image/b.png" Margin="0,10,0,-9"      ></Image>
             <Button x:Name="rem" Command ="{Binding RemoveMovieButtonClick}" Style="{StaticResource Corner}" Visibility="Hidden"   Margin="241,291,480,888" Content="Remove Movie"  />
@@ -77,17 +79,17 @@
         <Grid
          Grid.Row=" 0" 
          Background="Transparent"    >
-            <Border  Grid.Row="1" 
-         BorderBrush="Aqua" 
+            <Border 
+         BorderBrush="White"  
          BorderThickness=" 3"
-         Margin="7" 
+         Margin="13,13,152.4,9.8" 
          CornerRadius="10" >
                 <StackPanel 
          Orientation="Horizontal"  >
                     <TextBox 
          Name="messtxtb"
          Foreground="White"    
-         Width="750"
+         Width="600"
          BorderThickness="0"
          Cursor="Hand"
          FontSize="30"

@@ -33,38 +33,59 @@ namespace cinemApp.ViewModel
             MoviesRepostory = new FakeRepostory();
             Movies  = new ObservableCollection<Movie >(MoviesRepostory.GetMovies());
              HttpResponseMessage response = new HttpResponseMessage();
-       
-            Helper.Help(Movies[0], response ,http);
-            Helper.Help(Movies[1], response ,http);
-            Helper.Help(Movies[2], response ,http);
-            Helper.Help(Movies[3], response, http);
+
+
+             if (Movies[0].Name != null)
+            {
+                Helper.Help(Movies[0], response, http);
+
+            }
+             if (Movies[1].Name != null)
+            {
+                Helper.Help(Movies[1], response, http);
+
+            }
+             if (Movies[2].Name != null)
+            {
+                Helper.Help(Movies[2], response, http);
+
+            }
+             if (Movies[3].Name != null)
+            {
+                Helper.Help(Movies[3], response, http);
+
+            }
+             if(Movies[4].Name != null)
+            {
             Helper.Help(Movies[4], response, http); 
+
+            }
            if (Movies [5].Name !=null)
             {
             Helper.Help(Movies[5], response, http);
 
             }
-           else if (Movies[6].Name != null)
+            if (Movies[6].Name != null)
             {
                 Helper.Help(Movies[6], response, http);
 
             }
-           else if (Movies[7].Name != null)
+            if (Movies[7].Name != null)
             {
                 Helper.Help(Movies[7], response, http);
 
             }
-            else if (Movies[8].Name != null)
+             if (Movies[8].Name != null)
             {
                 Helper.Help(Movies[8], response, http);
 
             }
-            else if (Movies[9].Name != null)
+             if (Movies[9].Name != null)
             {
                 Helper.Help(Movies[9], response, http);
 
             }
-            else if (Movies[10].Name != null)
+             if (Movies[10].Name != null)
             {
                 Helper.Help(Movies[10], response, http);
 

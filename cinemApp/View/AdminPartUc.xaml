@@ -26,8 +26,8 @@
         <Label Foreground="White" Name="label" FontSize=" 42" FontFamily="Italic"  Background="DarkBlue"  >Cinema</Label>
         <Image x:Name="image" Source="/Image/user.jpg" Margin="0,38,0.4,-38.2"  ></Image>
 
-        <Button Height="30" Width=" 30" Name="closeadd" Visibility="Hidden"  Command      ="{Binding CloseAddButtonClick}" Margin=" 790,0,0,620" Style="{StaticResource Corner }" >X</Button>
-        <Button Height="30" Width=" 30" Name="closeremove" Visibility="Hidden"  Command      ="{Binding CloseRemoveButtonClick}" Margin=" 790,0,0,620" Style="{StaticResource Corner }" >X</Button>
+        <Button Height="30" Width=" 130" Name="closeadd" Visibility="Hidden" Background="DarkBlue"    FontSize=" 20" Foreground="White"      Command      ="{Binding CloseAddButtonClick}" Margin=" 750,0,0,700" >exit</Button>
+        <Button Height="30" Width=" 130" Name="closeremove" Visibility="Hidden" Background="DarkBlue" FontSize=" 20" Foreground="White"    Command      ="{Binding CloseRemoveButtonClick}" Margin=" 750,0,0,700"  >exit</Button>
         <StackPanel Orientation="Horizontal" Margin="246,350,0.4,9.8">
             <Button Height="60" Width=" 100" Name="s" Command ="{Binding AddMovieButtonClick}" Style="{StaticResource Corner }" Margin=" 50" >Add Movies</Button>
             <Button Width ="126" Name="b" Command="{Binding RemoveMovieButtonClick}" Style="{StaticResource Corner}" Margin="50,190,50,190.8" Content="Remove Movies" />

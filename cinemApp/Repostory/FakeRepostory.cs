@@ -51,11 +51,11 @@ namespace cinemApp.Repostory
                 },  new Movie
                 {
                     Name="Cindrella"
-                },  
+                },
                 new Movie
                 {
                     Name="Divergent"
-                }, 
+                },
                 new Movie
                 {
                     Name="Insurgent"
@@ -66,6 +66,7 @@ namespace cinemApp.Repostory
                 },
                    new Movie
                 {
+                      
                 },
                     new Movie
                 {

@@ -36,6 +36,7 @@
         <Grid 
     Grid.Row=" 1" 
     Margin="0,0.2,0.4,-514.2">
+        <local:ShowMovieUc Visibility="Hidden"   x:Name="show"></local:ShowMovieUc>
             <Image x:Name="n2"
     Source="/Image/b.png" 
     Margin="0,-958,0,-47"      >
@@ -78,18 +79,18 @@
         </Grid>
         <Grid
          Grid.Row=" 0" 
-         Background="Transparent"    >
+         Background="Transparent" Margin="0,0,140.4,727.8" Grid.RowSpan="2"    >
             <Border  Grid.Row="1" 
-         BorderBrush="Aqua" 
+         BorderBrush="White"  
          BorderThickness=" 3"
-         Margin="7" 
+         Margin="13" 
          CornerRadius="10" >
                 <StackPanel 
          Orientation="Horizontal"  >
                     <TextBox 
          Name="messtxtb"
          Foreground="White"    
-         Width="750"
+         Width="600"
          BorderThickness="0"
          Cursor="Hand"
          FontSize="30"

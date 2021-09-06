@@ -34,18 +34,17 @@ namespace cinemApp.ViewModel
                  AdminUc.add.Visibility = Visibility.Hidden;
                  AdminUc.s.Visibility = Visibility.Visible ;
                  AdminUc.b.Visibility = Visibility.Visible;
-
                  AdminUc.image.Visibility = Visibility.Visible;
                  AdminUc.label.Visibility = Visibility.Visible ;
                  AdminUc.closeadd.Visibility = Visibility.Hidden ;
 
+               
              });
             CloseRemoveButtonClick = new RelayCommand((cladd) =>
             {
                 AdminUc.remove.Visibility = Visibility.Hidden;
                 AdminUc.s.Visibility = Visibility.Visible;
                 AdminUc.b.Visibility = Visibility.Visible;
-
                 AdminUc.image.Visibility = Visibility.Visible;
                 AdminUc.label.Visibility = Visibility.Visible;
                 AdminUc.closeremove.Visibility = Visibility.Hidden ;
@@ -55,11 +54,14 @@ namespace cinemApp.ViewModel
             {
                 AdminUc.s.Visibility = Visibility.Hidden;
                 AdminUc.b.Visibility = Visibility.Hidden;
+                AdminUc.add.Visibility = Visibility.Visible;
 
                 AdminUc.image.Visibility = Visibility.Hidden;
                 AdminUc.label.Visibility = Visibility.Hidden;
-                AdminUc.add.Visibility = Visibility.Visible;
                 AdminUc.closeadd .Visibility = Visibility.Visible;
+
+
+              
             });
             RemoveMovieButtonClick = new RelayCommand((rm) =>
           {
@@ -72,7 +74,7 @@ namespace cinemApp.ViewModel
               AdminUc.label.Visibility = Visibility.Hidden;
               AdminUc.b.Visibility = Visibility.Hidden;
               AdminUc.closeremove.Visibility = Visibility.Visible;
-
+              
 
 
           });

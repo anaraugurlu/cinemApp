@@ -25,8 +25,8 @@
         <local:BuyTicketUc x:Name="buy" Visibility="Hidden" ></local:BuyTicketUc> 
         <Label Foreground="White" Name="label" FontSize=" 42" FontFamily="Italic">Cinema</Label>
         <Image x:Name="image" Source="/Image/user.jpg" Margin="-10,36,10.4,-36.2"  ></Image>
-        <Button Height="30" Width=" 30" Name="closeshow" Visibility="Hidden"    Command      ="{Binding CloseShowButtonClick}" Margin=" 790,0,0,700" Background="AliceBlue"  >X</Button>
-        <Button Height="30" Width=" 30" Name="closebuy" Visibility="Hidden"    Command      ="{Binding CloseBuyButtonClick}" Margin=" 790,0,0,700" Background ="AliceBlue"  >X</Button>
+        <Button Height="30" Width=" 130" Name="closeshow" Visibility="Hidden"        FontSize=" 20"  Foreground="White"   Command      ="{Binding CloseShowButtonClick}" Margin=" 750,0,0,700" Background="DarkBlue"  >exit</Button>
+        <Button Height="30" Width=" 130" Name="closebuy" Visibility="Hidden"   FontSize=" 20" Foreground=" white"    Command      ="{Binding CloseBuyButtonClick}" Margin=" 750,0,0,700"  Background ="DarkBlue"  >exit</Button>
         <StackPanel Orientation="Horizontal" Margin="246,350,0.4,9.8" >
             <Button Height="60" Width=" 100" Name="s" Command ="{Binding ShowMoviesButtonClick}" Style="{StaticResource Corner }" Margin=" 50" >Show Movies</Button>
             <Button Height="60" Width =" 100" Name="b" Command="{Binding BuyTicketButtonClick}" Style="{StaticResource Corner}" Margin=" 50" Content="Buy Ticket" />

@@ -36,26 +36,55 @@ namespace cinemApp.ViewModel
          
             AddMovieButtonClick = new RelayCommand((a) =>
              {
-                 if(Movies[5].Name == null)
+                 //if(Movies[5].Name == null)
+                 //{
+                 //AddMovie .show .name.Content  = AddMovie.messtxtb.Text.ToString();
+                 //AddMovie.n2.Visibility = Visibility.Hidden;
+                 //AddMovie.n.Visibility = Visibility.Hidden;
+                 //AddMovie.show.Visibility = Visibility.Visible;
+                 //  Movies[5].Name = AddMovie.messtxtb.Text.ToString();
+                 //Movie movie = new Movie();
+
+                 ////  MoviesRepository.GetMovies()[5].Name = AddMovie.messtxtb.Text.ToString();
+                 //movie.Name =  AddMovie.messtxtb.Text.ToString();
+                 ////Helper.Help(movie, response, http);
+                 Movie movie = new Movie();
+          
+                 movie .Name = AddMovie.messtxtb.Text.ToString();
+                 Helper.Help(movie, response, http);
+             if(Movies[5].Name == null)
                  {
-                     Movies[5].Name = AddMovie.label.Content.ToString ();
+                 Movies[5] = movie;
+                 MoviesRepository.GetMovies()[5]=movie ;
+
                  }
+
+
                  else if (Movies[6].Name == null)
                  {
-                     Movies[6].Name = AddMovie.label.Content.ToString();
+                     Movies[6] = movie;
+                     MoviesRepository.GetMovies()[6] = movie;
+
                  }
-                else if (Movies[7].Name == null)
+                 else if (Movies[7].Name == null)
                  {
-                     Movies[7].Name = AddMovie.label.Content.ToString();
+                     Movies[7] = movie;
+                     MoviesRepository.GetMovies()[7] = movie;
+
                  }
                  else if (Movies[8].Name == null)
                  {
-                     Movies[8].Name = AddMovie.label.Content.ToString();
+                     Movies[8] = movie;
+                     MoviesRepository.GetMovies()[8] = movie;
+
                  }
-                else if (Movies[9].Name == null)
+                 else if (Movies[9].Name == null)
                  {
-                     Movies[9].Name = AddMovie.label.Content.ToString();
+                     Movies[9] = movie;
+                     MoviesRepository.GetMovies()[9] = movie;
+
                  }
+                 MessageBox.Show($"the movie {movie.Name } was added");
              });
             SearchButtonClick = new RelayCommand((s) =>
             {

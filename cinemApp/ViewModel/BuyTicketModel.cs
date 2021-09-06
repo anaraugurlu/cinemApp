@@ -20,10 +20,11 @@ namespace cinemApp.ViewModel
             buy = new RelayCommand ((t) => {
 
                 MessageBox.Show("The ticket was purchased successfully");
+             
             
             });
             ButtonClick = new RelayCommand((b) => {
-
+                Buy.buyy.Visibility = Visibility.Visible;
                 Buy.buy.Visibility = Visibility.Visible;
                 Ticket ticket = new Ticket();
                 MessageBox.Show("Click buy");

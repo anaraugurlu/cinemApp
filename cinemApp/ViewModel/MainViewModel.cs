@@ -22,22 +22,25 @@ namespace cinemApp.ViewModel
         public MainViewModel()
         {
             CloseWindowButtonClick = new RelayCommand((clb) =>
-
               {
                   MainWindow.closewindow.Visibility = Visibility.Visible;
                   MainWindow.window.Close();
               });
             CloseUserButtonClick = new RelayCommand((clu) =>
              {
-                 MainWindow.closeuser.Visibility = Visibility.Hidden ;
-                 MainWindow.signucus.Visibility = Visibility.Hidden ;
-                 MainWindow.user.Visibility = Visibility.Visible ;
-                 MainWindow.admin.Visibility = Visibility.Visible ;
+                 MainWindow.closeuser.Visibility = Visibility.Hidden;
+
+                 MainWindow.closeuser.Visibility = Visibility.Visible  ;
+                 MainWindow.signucus.Visibility = Visibility.Hidden;
+                 MainWindow.user.Visibility = Visibility.Visible;
+                 MainWindow.admin.Visibility = Visibility.Visible;
              });
             CloseAdminButtonClick = new RelayCommand((clu) =>
             {
-                MainWindow.closeadmin.Visibility = Visibility.Hidden ;
-                MainWindow.signucus.Visibility = Visibility.Hidden;
+                MainWindow.im.Visibility = Visibility.Visible ;
+
+                MainWindow.closeadmin.Visibility = Visibility.Hidden   ;
+                MainWindow.signadmin.Visibility = Visibility.Hidden;
                 MainWindow.user.Visibility = Visibility.Visible;
                 MainWindow.admin.Visibility = Visibility.Visible;
             });
@@ -47,7 +50,7 @@ namespace cinemApp.ViewModel
                  MainWindow.user.Visibility = Visibility.Collapsed;
                  MainWindow.admin.Visibility = Visibility.Collapsed;
                  MainWindow.closeuser.Visibility = Visibility.Visible;
-                 MainWindow.closewindow.Visibility = Visibility.Hidden ;
+                 //MainWindow.closewindow.Visibility = Visibility.Hidden;
 
 
              });
@@ -55,8 +58,8 @@ namespace cinemApp.ViewModel
              {                 MainWindow.signadmin.Visibility = Visibility.Visible;
                  MainWindow.user.Visibility = Visibility.Collapsed;
                  MainWindow.admin.Visibility = Visibility.Collapsed;
-                 MainWindow.closewindow.Visibility = Visibility.Hidden ;
-
+                 //MainWindow.closewindow.Visibility = Visibility.Visible ;
+                 MainWindow.im.Visibility = Visibility.Hidden ;
                  MainWindow.closeadmin.Visibility = Visibility.Visible;
              });
         }
